@@ -9,6 +9,7 @@ mongo.js
 
 # production
 /build
+/build_old
 
 # misc
 .eslintcache
