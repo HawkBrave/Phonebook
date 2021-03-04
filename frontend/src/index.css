@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+div {
+  @apply p-5;
+}
+
+h1 {
+  @apply text-4xl font-bold text-gray-900;
+}
+
+h2 {
+  @apply text-2xl font-bold text-gray-800;
+}
+
+ul {
+  @apply flex flex-col justify-evenly;
+  @apply md:flex-row md:flex-wrap;
+}
+
+li {
+  @apply my-2 py-1 pl-5 pr-1 flex justify-between items-center text-lg shadow-md rounded-xl;
+  @apply md:mx-5;
+}
+
+.root {
+  @apply bg-gradient-to-r from-gray-800 to-gray-900 p-0 overflow-scroll flex items-center justify-center text-gray-600;
+  @apply md:h-screen md:p-5 md:overflow-hidden;
+}
+
+.main {
+  @apply px-0 py-5 flex flex-col justify-around items-center shadow-md bg-gradient-to-r from-purple-400 via-pink-500 to-red-500;
+  @apply md:flex-row md:rounded-xl md:h-full md:w-full;
+}
+
+.form {
+  @apply w-96 flex flex-col rounded-t-xl overflow-scroll items-center bg-white max-h-full;
+  @apply md:mx-10 md:w-2/6 md:rounded-xl;
+  @apply sm:w-96;
+}
+
+.numbers {
+  @apply px-5 flex flex-col rounded-b-xl overflow-scroll items-center w-96 bg-white max-h-full;
+  @apply md:mx-10 md:w-8/12 md:rounded-xl;
+}
+
+.row {
+  @apply w-96 flex items-center;
+}
+.row-last {
+  @apply p-0.5 mx-auto flex flex-col items-stretch rounded-lg h-11 w-36 bg-gradient-to-r from-green-400 to-blue-500;
+}
+
+.input-div {
+  @apply my-5 px-2 flex justify-start items-center rounded-lg shadow-inner h-10 w-60 bg-gray-100; 
+}
+.input {
+  @apply mx-2 w-40 h-10 bg-gray-100 focus:outline-none;
+}
+.input-icon {
+  @apply flex-shrink-0 h-6 w-6;
+}
+.delete-icon {
+  @apply h-6 w-6;
+}
+
+.btn {
+  @apply py-2 px-4 font-semibold rounded-lg bg-white text-black;
+  @apply hover:text-white bg-gradient-to-r from-white to-white hover:from-green-400 hover:to-blue-500;
+}
+.person-btn {
+  @apply items-center py-2 px-4 font-semibold rounded-lg bg-white text-red-500;
+}
+
+.person-name-number {
+  @apply flex flex-col p-0 leading-3;
+}
